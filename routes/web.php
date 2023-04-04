@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestOneController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//___________TEST CONTROLLER ONE________//
+Route::get('/test', [TestOneController::class,'index']);
